@@ -1,0 +1,17 @@
+.demo-screen {
+  position: absolute;
+  min-height: 100vh;
+  width: calc(100% - 900px);
+  left: 900px;
+  transition: all 0.5s ease;
+  top: 4.5rem;
+  overflow: hidden;
+  max-width: 1500px;
+  min-width: 600px;
+  /* background-color: #f7f4fa;
+    background-color: #f8e090; */
+  z-index: 1 !important;
+}
+.ongoing-demoscreen {
+  display: none !important;
+}

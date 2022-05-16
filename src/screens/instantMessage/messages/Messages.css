@@ -1,0 +1,136 @@
+.bottom-div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 10rem;
+  padding: 0.5rem 2.5rem;
+  box-shadow: 1px 2px 3px rgb(199, 197, 197);
+}
+
+.search-input::placeholder {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgb(182, 176, 176);
+}
+
+.side-icon {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  background: linear-gradient(to top, #ec24c1, #d8374c, #fc8c0c);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 225px;
+  cursor: pointer;
+  margin: 0.5rem;
+  z-index: 2000 !important;
+}
+
+.msg_received_container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to left, #ec24c1, #d8374c, #fc8c0c);
+  padding: 15px;
+  position: relative;
+  color: #fff;
+}
+
+.msg_received_container_image {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 20px;
+  background: white;
+  padding: 15px;
+  position: relative;
+  color: #fff;
+}
+iframe ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.msg_send_container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: rgb(143, 141, 141);
+  padding: 10px;
+  position: relative;
+  color: #fff;
+}
+.msg_send_container > .container {
+  /* display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+  text-align: end !important; */
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0px;
+}
+
+.msg_time {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  /* color: rgba(255,255,255,0.5); */
+  font-size: 10px;
+}
+.msg_time_send {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+.msg_head {
+  position: relative;
+}
+.msg-container {
+  width: 40%;
+}
+
+.msg_input {
+  width: calc(100% - 300px);
+  left: 300px;
+}
+.msg_call_input {
+  width: calc(68% - 60px);
+  left: 60px;
+}
+.chat-window {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .msg_input {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .msg_call_input {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+}
+
+.react-scroll-to-bottom--css-xldwp-1n7m0yu {
+  overflow-x: hidden;
+}
+
+.im-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,124 @@
+.bottom-div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 10rem;
+  padding: 0.5rem 2.5rem;
+  box-shadow: 1px 2px 3px rgb(199, 197, 197);
+}
+
+.search-input::placeholder {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgb(182, 176, 176);
+}
+
+.fax-received-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  /* background: linear-gradient(to left, #ec24c1, #d8374c, #fc8c0c); */
+  background-color: #fc8c0c;
+  padding: 15px 0px;
+  position: relative;
+  color: #fff;
+  height: 150px;
+  overflow: hidden;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+}
+.fax-send-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(143, 141, 141);
+  padding: 10px 0px;
+  position: relative;
+  color: #fff;
+  height: 150px;
+  overflow: hidden;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+}
+
+.msg_head {
+  position: relative;
+}
+.msg-container {
+  width: 40%;
+}
+
+.send-fax-uncollapsed {
+  width: calc(100% - 300px);
+  left: 300px;
+}
+.send-fax-collapsed {
+  width: calc(100% - 50px);
+  left: 50px;
+}
+
+.fax-footer-icon {
+  height: 25px;
+}
+.fax-footer-big {
+  height: 50px;
+}
+.header-date-span {
+  background-color: lightgray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.fax-card-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  justify-content: flex-end;
+}
+/* .pageClass {
+  height: 100% !important;
+  width: 400px !important;
+} */
+
+.send-fax-footer {
+  position: absolute;
+  bottom: 5rem;
+  width: 98%;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  text-align: right;
+  margin-left: 0.5rem;
+  left: 0px;
+  /* border-top: 1px solid #8a2be2; */
+  background: #d8d6da94;
+}
+.send-fax {
+  height: 70px;
+  width: 70px;
+  border-radius: 10rem;
+  background: rgb(255 255 255 / 5%);
+  text-align: right;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0px 0px 5px #bfbfbf;
+  cursor: pointer;
+}
+.send-arrow {
+  height: 40px;
+  width: 40px;
+}

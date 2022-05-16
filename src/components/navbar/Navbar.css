@@ -1,0 +1,31 @@
+.navbar {
+  z-index: 2 !important;
+  position: relative;
+  width: calc(100% - 300px);
+  left: 300px;
+  padding: 0.3rem 0.2rem;
+  /* background: linear-gradient(to right, #be2edd, #d8374c, #fc8c0c); */
+  background: var(--primary-gradient);
+  display: flex;
+  color: var(--navbar-heading);
+  font-family: Lato;
+}
+.navbar-uncollapsed {
+  z-index: 2 !important;
+  position: relative;
+
+  width: calc(100% - 50px);
+  left: 50px;
+  padding: 0.3rem 0.2rem;
+  /* background: linear-gradient(to right, #be2edd, #d8374c, #fc8c0c); */
+  background: var(--primary-gradient);
+  display: flex;
+  color: var(--navbar-heading);
+  font-family: Lato;
+}
+
+.register-icon {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,45 @@
+:root {
+  --primary-gradient: linear-gradient(to right, #be2edd, #d8374c, #fc8c0c);
+  --navbar-heading: #fff;
+  --image-border-color: #808080;
+  --sidebar-search: rgb(0 0 0 / 1.5%);
+  --sidebar-search-focus-bg: #fff;
+  --sidebar-menu-color: #1a1c29;
+  --sidebar-arrow-color: #2b345f;
+  --sidebar-menu-hover-bg: rgb(0 0 0.2 / 5%);
+  --dashboard-bg-color: #fff;
+  --missed-call-text: #ff0000;
+  --outgoing-call-text: #0d36fd;
+  --received-call-text: #16a085;
+  --calls-hover-color: rgb(0, 0, 0, 0.1);
+  --dialpad-bg-color: #fff;
+  --dial-button-color: #05c46b;
+  /* --dialpad-top-color:#d3d3d3; */
+  --dialpad-top-color: #242525;
+  --ongoing-bg-color: linear-gradient(to top, #be2edd, #d8374c, #fc8c0c);
+  --ongoing-icon-bg-color: #000;
+  --ongoing-icon-color: #fff;
+  --cancel-call-color: rgb(253, 14, 14);
+  --accept-call-color: rgb(9, 206, 9);
+  --incoming-bg-color: #000;
+  --login-bg-color: #fff;
+  --alert-color: #f10629;
+  --forgot-password-color: #808080;
+  --link-color: #000;
+  --calls-border: #d3d3d3;
+  --dtmf-bg-color: #fff;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

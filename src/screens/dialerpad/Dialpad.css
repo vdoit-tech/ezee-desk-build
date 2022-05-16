@@ -1,0 +1,65 @@
+.dialpad-area {
+  background-color: var(--dialpad-bg-color);
+  width: 18rem;
+  /* height: 50vh; */
+  /* box-shadow: 10px 10px 0px rgb(0 0 0 / 10%); */
+  border-radius: 0.7rem;
+  /* margin-bottom: 4.5rem; */
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border: 1px solid #bfbfbf;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  transition: all 0.5s;
+}
+
+.search-dial-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(100, 99, 99); */
+  background-color: transparent;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  /* padding:10px 0px ; */
+  /* width: 50px; */
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.sub {
+  font-size: 0.8rem;
+  font-weight: light !important;
+  padding-bottom: 0.3rem !important;
+  /* color: grey; */
+}
+
+.call {
+  /* background-color: rgb(9, 206, 9); */
+  background-color: var(--dial-button-color);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--dialpad-bg-color);
+  height: 50px;
+  width: 50px;
+}
+.connect,
+.back {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+}
+
+/*  */

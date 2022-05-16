@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/electron-builder.yml
+
+# testing
+/coverage
+
+# production
+/build
+/out
+/release-builds
+/release-builds.zip
+/release-builds/ezeetel-win32-ia32/resources/app.asar
+
+# git revert a9d874120a23a7f5c835d2ce4c9872cafd1e859e e735ce495fe218230bf0e70eac09206402041b94 c6b688201731d7c3fef0de5e80d80edd912d1dfb 
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+

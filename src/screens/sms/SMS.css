@@ -1,0 +1,19 @@
+.container > img {
+  width: 200px !important;
+  height: 150px !important;
+}
+.msg_received_container > .container {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+  text-align: end !important;
+}
+a {
+  color: "red !important";
+}
+
+.sms-group-image > .container {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+}
