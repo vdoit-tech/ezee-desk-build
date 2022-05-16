@@ -1,0 +1,141 @@
+{
+  "name": "ezeetel",
+  "productName": "ezeetel",
+  "version": "0.0.0",
+  "description": "Ezeetel app for internal staff",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdoit-tech/ezee-desk-build.git"
+  },
+  "dependencies": {
+    "@react-native-community/netinfo": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.8",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "core-js": "^3.22.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "electron-chrome-extensions": "^3.8.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-log": "^4.4.6",
+    "electron-push-receiver": "^2.1.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.0.1",
+    "electron-webrtc": "^0.3.0",
+    "firebase": "^9.5.0",
+    "jssip": "^3.8.2",
+    "modifyjs": "^0.3.1",
+    "moment": "^2.29.1",
+    "nedb": "^1.8.0",
+    "node-gyp": "^9.0.0",
+    "rage-edit": "^1.2.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-chartjs-2": "^3.3.0",
+    "react-contexify": "^5.0.0",
+    "react-dom": "^17.0.2",
+    "react-native-event-listeners": "^1.0.7",
+    "react-native-webrtc": "^1.89.3",
+    "react-player": "^2.9.0",
+    "react-responsive-modal": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-timer-hook": "^3.0.5",
+    "reactjs-media": "^1.5.1",
+    "sip.js": "^0.20.0",
+    "socket.io-client": "^4.3.2",
+    "update-electron-app": "^2.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "electron-builder build --mac --win --publish always",
+    "eject": "react-scripts eject",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
+    "electron": "wait-on tcp:3000 && electron-forge start",
+    "package": "react-scripts build && electron-forge package",
+    "make": "react-scripts build && electron-forge make",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . ezeetel --overwrite --asar --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ezeetel\"",
+    "create-installer-win": "node installers/windows/createinstaller.js",
+    "rebuild-logger": "electron-rebuild -f -w electron-log",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ezeetel",
+    "email": "info@ezeetel.com"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "concurrently": "^6.2.0",
+    "electron": "^13.1.6",
+    "electron-builder": "^23.0.3",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-packager": "^15.4.0",
+    "electron-rebuild": "^3.2.7",
+    "electron-winstaller": "^5.0.0",
+    "wait-on": "^6.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "src/icons/mac/icon.icns",
+        "name": "React-electron-test"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electron_react"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

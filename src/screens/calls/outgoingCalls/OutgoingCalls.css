@@ -1,0 +1,4 @@
+.outgoing-call-text{
+    color:var(--outgoing-call-text);
+    font-size: 0.85rem;
+}

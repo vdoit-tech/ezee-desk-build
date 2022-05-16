@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+.person-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--image-border-color);
+  border-radius: 50%;
+}
+a {
+  color: black !important;
+}
+.link-color {
+  color: var(--link-color);
+}
+.link-color:hover {
+  color: var(--link-color);
+}
+
+#callDiv {
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  width: 300px;
+  transition: all 1s;
+  z-index: 2000 !important;
+}
+
+#callDivTop {
+  height: 2rem;
+  background-color: var(--dialpad-top-color);
+  color: var(--dialpad-bg-color);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.dashboard {
+  position: absolute;
+  min-height: 100vh;
+  width: calc(100% - 300px);
+  left: 300px;
+  transition: all 0.5s ease;
+  top: 3.1rem;
+  overflow: hidden;
+  max-width: 1500px;
+  /* min-width: 600px; */
+  background-color: var(--dashboard-bg-color);
+}
+.dashboard-uncollapsed {
+  position: absolute;
+  min-height: 100vh;
+  transition: all 0.5s ease;
+  top: 3.1rem;
+  overflow: hidden;
+
+  width: calc(100% - 50px);
+  left: 50px;
+  background-color: var(--dashboard-bg-color);
+}
+
+.half-dashboard {
+  height: calc(100vh - 75px);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px var(--dialpad-bg-color); */
+  background-color: transparent;
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: var(--image-border-color);
+  border-radius: 10px; */
+  background-color: #d6dee1;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  /* background-clip: content-box; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8bbbf;
+}
+.ongoing-animated-icon {
+  animation-name: calling;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes calling {
+  0% {
+    background-color: rgb(73, 189, 44);
+    /* transform: scale(1.05); */
+  }
+
+  100% {
+    background-color: var(--dialpad-top-color);
+
+    /* transform: scale(1); */
+  }
+}

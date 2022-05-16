@@ -1,0 +1,55 @@
+.contact {
+  border-bottom: 1px solid var(--calls-border) !important;
+  /* height: 90px; */
+}
+.contact:hover {
+  /* cursor: pointer; */
+  background-color: var(--calls-hover-color);
+}
+.contact-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  /* border: 1px solid var(--image-border-color); */
+  border-radius: 50%;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 850px) {
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menu {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 2px;
+  padding: 5px 1px;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  /* use absolute positioning  */
+  position: absolute;
+  list-style: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.rightclick-menu {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+.rightclick-menu-item {
+  margin: 3px 0px;
+  padding: 5px 5px;
+}
+.rightclick-menu-item:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+}

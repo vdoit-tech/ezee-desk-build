@@ -1,0 +1,4 @@
+.missed-call-text{
+    color: var(--missed-call-text);
+    font-size: 0.85rem;
+}

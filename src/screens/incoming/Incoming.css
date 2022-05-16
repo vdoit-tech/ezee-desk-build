@@ -1,0 +1,38 @@
+.incoming-collapsed {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  width: calc(100% - 50px);
+  left: 50px;
+  transition: all 0.5s ease;
+
+  overflow-x: hidden;
+  z-index: 5000 !important;
+}
+.incoming {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  width: calc(100% - 300px);
+  left: 300px;
+  transition: all 0.5s ease;
+  /* top: 4rem; */
+  overflow-x: hidden;
+  z-index: 5000 !important;
+}
+.incoming-div {
+  background: var(--incoming-bg-color);
+}
+.bottom-buttons {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+.cancel-call {
+  background-color: var(--cancel-call-color);
+}
+.accept-call {
+  background-color: var(--accept-call-color);
+}

@@ -1,0 +1,23 @@
+.upload-file-div {
+  background-color: #e335ef1a;
+  border: 1px dashed #d834de;
+}
+
+.choose-btn {
+  border: 1px solid #686668;
+  border-radius: 5px;
+  padding: 8px;
+
+  font-weight: 500;
+  color: #161616;
+}
+
+.choose-btn:hover {
+  background-color: #d834de;
+  border: 1px solid #d834de;
+  color: white;
+  cursor: pointer;
+}
+.upload-file-icon {
+  height: 40px;
+}

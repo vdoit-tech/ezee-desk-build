@@ -1,0 +1,59 @@
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.login-page {
+  position: fixed;
+  z-index: 5000 !important;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--login-bg-color);
+  overflow: hidden;
+}
+
+.login-main-input {
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  padding: 0.5rem 2.5rem;
+  box-shadow: 0px 3px 2px rgb(199, 197, 197);
+}
+
+.submit-button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 2rem;
+  background: var(--ongoing-bg-color);
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.login-logo-div {
+  margin-bottom: 10rem;
+}
+
+#submit-alert,
+#email-alert,
+#password-alert {
+  color: var(--alert-color);
+}
+
+.submit-icon {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--login-bg-color);
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: var(--forgot-password-color);
+  font-weight: 700;
+  cursor: pointer;
+}

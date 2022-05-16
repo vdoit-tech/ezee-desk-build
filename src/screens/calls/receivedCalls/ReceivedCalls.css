@@ -1,0 +1,4 @@
+.received-call-text{
+    color: var(--received-call-text);
+    font-size: 0.85rem;
+}
